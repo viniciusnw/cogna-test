@@ -28,14 +28,8 @@ services:
       - ./app:/app/app
       - chroma_data:/app/chroma_db
       - ./logs:/app/logs
-    environment:
-      - OLLAMA_BASE_URL=http://ollama:11434
-      - OLLAMA_MODEL=llama2
-      - EMBEDDING_MODEL=all-MiniLM-L6-v2
-      - CHUNK_SIZE=500
-      - CHUNK_OVERLAP=50
-      - TOP_K=5
-      - LOG_LEVEL=INFO
+    env_file:
+      - .env
     depends_on:
       ollama:
         condition: service_healthy

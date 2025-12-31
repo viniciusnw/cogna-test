@@ -24,7 +24,7 @@ from app.utils.logger import setup_logging
 # Configurar logging estruturado com arquivo
 logger = setup_logging(log_dir="/app/logs", log_level=settings.log_level)
 
-# Variáveis globais para serviços
+# Variáveis globais para serviços (DI)
 indexer: DocumentIndexer = None
 rag_service: RAGService = None
 guardrail_service: GuardrailService = None
