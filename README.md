@@ -71,11 +71,6 @@ cd .../cogna-test
 ```bash
 # Opção 1: Script automático
 ./setup-and-run.sh
-
-# Opção 2: Manual
-docker-compose up -d
-docker exec micro-rag-ollama ollama pull llama2
-docker-compose restart api
 ```
 
 3. **Rodar Testes**
