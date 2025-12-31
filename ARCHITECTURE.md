@@ -100,12 +100,11 @@ Este documento detalha as decisões arquiteturais do projeto Micro-RAG, explican
 
 **Alternativas:**
 | Modelo | Custo/1M tokens | Latência | Qualidade |
-
-|--------|----------------|----------|-----------|
-| GPT-4 | $30-60 | 2-4s | ⭐⭐⭐⭐⭐ |
-| GPT-3.5 | $1-2 | 1-2s | ⭐⭐⭐⭐ |
-| Claude | $8-24 | 1-3s | ⭐⭐⭐⭐⭐ |
-| Llama2 Local | $0 | 5-15s | ⭐⭐⭐ |
+|--------|----------------|----------|----------- |
+| GPT-4        | $30-60 | 2-4s  | ⭐⭐⭐⭐⭐     |
+| GPT-3.5      | $1-2   | 1-2s  | ⭐⭐⭐⭐       |
+| Claude       | $8-24  | 1-3s  | ⭐⭐⭐⭐⭐     |
+| Llama2 Local | $0     | 5-15s | ⭐⭐⭐         |
 
 **Justificativa:**
 
